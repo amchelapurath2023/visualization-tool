@@ -175,7 +175,7 @@ const AlgoScreen = ({ theme, toggleTheme }) => {
 					</div>
 
 					<div className="viewport">
-						<canvas id="canvas" width={0} height="505" ref={canvasRef}></canvas>
+						<canvas id="canvas" ref={canvasRef}></canvas>
 						{moreInfoEnabled && (
 							<div className="modal">
 								<div className="modal-content">{infoModals[algoName]}</div>
@@ -188,12 +188,13 @@ const AlgoScreen = ({ theme, toggleTheme }) => {
 						)}
 					</div>
 
-					<div id="generalAnimationControlSection">
-						<table id="GeneralAnimationControls" ref={animBarRef}></table>
-					</div>
+
 				</div>
 
 				<div id="footer">
+				<div id="generalAnimationControlSection">
+						<table id="GeneralAnimationControls" ref={animBarRef}></table>
+					</div>
 					<p>
 						<Link to="/">Return to Home Page</Link>
 					</p>

@@ -25,6 +25,7 @@
 	-moz-appearance: none;
 }
 
+
 .VisualizationMainPage body {
 	font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -88,7 +89,7 @@
 }
 
 .VisualizationMainPage #GeneralAnimationControls {
-	padding: 2px 5px;
+	padding: 0px 0px;
 }
 
 .VisualizationMainPage #header {
@@ -121,6 +122,9 @@
 }
 
 .VisualizationMainPage #container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	background: #ffffff;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
@@ -137,25 +141,29 @@
 }
 
 .VisualizationMainPage #mainContent h1 {
+	flex: 1;
 	padding: 0 20px;
 	background: #ffffff;
 	color: #4277bb;
 }
 
 .VisualizationMainPage #mainContent h2 {
+	flex: 1;
 	padding: 0 20px;
 	background: #ffffff;
 	color: #4277bb;
 }
 
 .VisualizationMainPage #mainContent h3 {
+	flex: 1;
 	padding: 0 20px;
 	background: #ffffff;
 	color: #4277bb;
 }
 
 .VisualizationMainPage #footer {
-	padding: 0 10px;
+	margin-top: auto;
+	width: 100%;
 	background: var(--header);
 	border-top: 1.5px var(--border) solid;
 	border-bottom: 1.5px var(--border) solid;
@@ -163,7 +171,7 @@
 }
 
 .VisualizationMainPage #footer p {
-	margin: 0;
+	margin: 10;
 	padding: 10px 0;
 }
 
