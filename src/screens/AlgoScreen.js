@@ -192,7 +192,7 @@ const AlgoScreen = ({ theme, toggleTheme }) => {
 				</div>
 
 				<div id="footer">
-				<div id="generalAnimationControlSection">
+					<div id="generalAnimationControlSection">
 						<table id="GeneralAnimationControls" ref={animBarRef}></table>
 					</div>
 					<p>

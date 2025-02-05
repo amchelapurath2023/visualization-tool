@@ -306,6 +306,7 @@ export default class AnimationManager extends EventListener {
 
 		canvas.width = width;
 		canvas.height = height;
+		
 
 		tableEntry = document.createElement('td');
 		txtNode = document.createTextNode('Canvas height:');
